@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+  position: relative;
+  font-family: 'VT323', monospace;
+  font-size: 100px;
+  height: 100%;
+  z-index: -20;
+}
+
+@media (max-width: 480px) {
+  #root {
+    position: relative;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'VT323', monospace;
+    font-size: 28px;
+    height: 100%;
+    z-index: -20;
+  }
+  header {
+    height: 50px;
+  }
+  header img {
+    height: 70%;
+  }
+  main {
+    height: 86%;
+    position: relative;
+    z-index: -2;
+  }
+  .bg-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./assets/mainWindow.png');
+    background-size: cover;
+    filter: blur(8px);
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
+  .main-window  {
+    position:absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    text-decoration: underline;
+    color: blue;
+    font-size: 20px;
+  }
+  .nav-item img {
+    max-height: 30px;
+  }
+
+  .infinity-stroke {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 200px;
+    font-size: 120px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+  marquee {
+    position: absolute;
+    left: 0;
+    text-shadow: 8px 6px 0px rgba(0,0,0,0.8);
+    overflow: visible;
+  }
+
+  .crash-stroke {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 22px;
+    text-align: center;
+    padding: 8px;
+  }
+
+  .info-section {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .info-section span {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 166, 255);
+    text-decoration: underline;
+    
+  }
+
+  .info-section-details {
+    /* display: grid;
+    grid-template: 1fr / 0.5fr 0.5fr; */
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 8px;
+    
+  }
+  .info-section-details div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-shoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-shoot button{
+    height: 240px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 100%;
+  }
+
+  footer {
+    padding: 8px;
+    height: 40px;
+    background-color: white;
+    border-top: 3px solid black;
+  }
+}
